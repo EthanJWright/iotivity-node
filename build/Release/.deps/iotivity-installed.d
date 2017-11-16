@@ -1,0 +1,1 @@
+cmd_iotivity-installed := LD_LIBRARY_PATH=/home/joint/iotivity-node/build/Release/lib.host:/home/joint/iotivity-node/build/Release/lib.target:$$LD_LIBRARY_PATH; export LD_LIBRARY_PATH; cd ../.; node build-scripts/build-csdk.js

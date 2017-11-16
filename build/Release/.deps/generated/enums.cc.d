@@ -1,0 +1,1 @@
+cmd_generated/enums.cc := LD_LIBRARY_PATH=/home/joint/iotivity-node/build/Release/lib.host:/home/joint/iotivity-node/build/Release/lib.target:$$LD_LIBRARY_PATH; export LD_LIBRARY_PATH; cd ../.; mkdir -p generated; node build-scripts/generate-enums.js /home/joint/iotivity-node/iotivity-installed/include
