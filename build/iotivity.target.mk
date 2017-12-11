@@ -4,9 +4,6 @@ TOOLSET := target
 TARGET := iotivity
 DEFS_Debug := \
 	'-DNODE_GYP_MODULE_NAME=iotivity' \
-	'-DUSING_UV_SHARED=1' \
-	'-DUSING_V8_SHARED=1' \
-	'-DV8_DEPRECATION_WARNINGS=1' \
 	'-DROUTING_EP' \
 	'-D__WITH_DTLS__' \
 	'-D_LARGEFILE_SOURCE' \
@@ -22,6 +19,7 @@ CFLAGS_Debug := \
 	-Wall \
 	-Wextra \
 	-Wno-unused-parameter \
+	-m64 \
 	-g \
 	-O0
 
@@ -36,9 +34,9 @@ CFLAGS_CC_Debug := \
 	-std=gnu++0x
 
 INCS_Debug := \
-	-I/home/joint/iotivity-node/iotivity-installed/include \
+	-I/home/god/iotivity-node/iotivity-installed/include \
 	-I$(srcdir)/node_modules/nan \
-	-I/home/joint/iotivity-node/src \
+	-I/home/god/iotivity-node/src \
 	-I/usr/include/nodejs/include/node \
 	-I/usr/include/nodejs/src \
 	-I/usr/include/nodejs/deps/uv/include \
@@ -46,9 +44,6 @@ INCS_Debug := \
 
 DEFS_Release := \
 	'-DNODE_GYP_MODULE_NAME=iotivity' \
-	'-DUSING_UV_SHARED=1' \
-	'-DUSING_V8_SHARED=1' \
-	'-DV8_DEPRECATION_WARNINGS=1' \
 	'-DROUTING_EP' \
 	'-D__WITH_DTLS__' \
 	'-D_LARGEFILE_SOURCE' \
@@ -62,6 +57,7 @@ CFLAGS_Release := \
 	-Wall \
 	-Wextra \
 	-Wno-unused-parameter \
+	-m64 \
 	-O3 \
 	-ffunction-sections \
 	-fdata-sections \
@@ -78,9 +74,9 @@ CFLAGS_CC_Release := \
 	-std=gnu++0x
 
 INCS_Release := \
-	-I/home/joint/iotivity-node/iotivity-installed/include \
+	-I/home/god/iotivity-node/iotivity-installed/include \
 	-I$(srcdir)/node_modules/nan \
-	-I/home/joint/iotivity-node/src \
+	-I/home/god/iotivity-node/src \
 	-I/usr/include/nodejs/include/node \
 	-I/usr/include/nodejs/src \
 	-I/usr/include/nodejs/deps/uv/include \
@@ -137,15 +133,17 @@ $(obj).$(TOOLSET)/$(TARGET)/%.o: $(obj)/%.cc FORCE_DO_CMD
 ### Rules for final target.
 LDFLAGS_Debug := \
 	-pthread \
-	-rdynamic
+	-rdynamic \
+	-m64
 
 LDFLAGS_Release := \
 	-pthread \
-	-rdynamic
+	-rdynamic \
+	-m64
 
 LIBS := \
-	-L/home/joint/iotivity-node/iotivity-installed/lib \
-	-Wl,-rpath /home/joint/iotivity-node/iotivity-installed/lib \
+	-L/home/god/iotivity-node/iotivity-installed/lib \
+	-Wl,-rpath /home/god/iotivity-node/iotivity-installed/lib \
 	-loctbstack
 
 $(obj).target/iotivity.node: GYP_LDFLAGS := $(LDFLAGS_$(BUILDTYPE))

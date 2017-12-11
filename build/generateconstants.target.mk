@@ -4,7 +4,7 @@ TOOLSET := target
 TARGET := generateconstants
 ### Rules for action "generateconstants":
 quiet_cmd_binding_gyp_generateconstants_target_generateconstants = ACTION Generating constants $@
-cmd_binding_gyp_generateconstants_target_generateconstants = LD_LIBRARY_PATH=$(builddir)/lib.host:$(builddir)/lib.target:$$LD_LIBRARY_PATH; export LD_LIBRARY_PATH; cd $(srcdir)/.; mkdir -p generated; node build-scripts/generate-constants.js /home/joint/iotivity-node/iotivity-installed/include
+cmd_binding_gyp_generateconstants_target_generateconstants = LD_LIBRARY_PATH=$(builddir)/lib.host:$(builddir)/lib.target:$$LD_LIBRARY_PATH; export LD_LIBRARY_PATH; cd $(srcdir)/.; mkdir -p generated; node build-scripts/generate-constants.js /home/god/iotivity-node/iotivity-installed/include
 
 generated/constants.cc: obj := $(abs_obj)
 generated/constants.cc: builddir := $(abs_builddir)

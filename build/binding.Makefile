@@ -3,4 +3,4 @@
 export builddir_name ?= ./build/.
 .PHONY: all
 all:
-	$(MAKE) csdk generateconstants generateenums generatefunctions iotivity
+	$(MAKE) csdk generateenums generatefunctions generateconstants iotivity

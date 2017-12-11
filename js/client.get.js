@@ -80,6 +80,7 @@ iotivity.OCDoResource(
 					iotivity.OCQualityOfService.OC_HIGH_QOS,
 					getResponseHandler,
 					null );
+                console.log("--------------HERE------------");
 			}
 		}
 

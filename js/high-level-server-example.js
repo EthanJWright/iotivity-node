@@ -48,7 +48,6 @@ _.extend( device.platform, {
 
 sensor.on( "change", function( newData ) {
 	var index;
-
 	if ( !lightResource ) {
 		return;
 	}

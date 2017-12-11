@@ -14,68 +14,58 @@
 
 // This mock sensor implementation triggers an event with some data every once in a while
 
-/* RPI Interface */
-var Gpio = require('onoff').Gpio
-var sleep = require('sleep');
-var pushButton = new Gpio(19, 'in', 'both');
-
 // Return a random integer between 0 and @upperLimit
 function randomInteger( upperLimit ) {
-    return Math.round( Math.random() * upperLimit );
+	return Math.round( Math.random() * upperLimit );
 }
 
+var fs = require('fs');
+
 var _ = {
-    extend: require( "lodash.assignin" ),
-    bind: require( "lodash.bind" )
+	extend: require( "lodash.assignin" ),
+	bind: require( "lodash.bind" )
 };
 
 var possibleStrings = [
-        "Helsinki",
-        "Espoo",
-        "Tampere",
-        "Oulu",
-        "Mikkeli",
-        "Ii"
-    ];
+		"Helsinki",
+		"Espoo",
+		"Tampere",
+		"Oulu",
+		"Mikkeli",
+		"Ii"
+	];
 
-var bound;
 var MockSensor = function MockSensor() {
-    function trigger() {
-      this.emit( "change", this.currentData() );
-      bound = _.bind( trigger, this);
-//        setTimeout( _.bind( trigger, this ), randomInteger( 1000 ) + 1000 );
-    }
-    if ( !this._isMockSensor ) {
-        return new MockSensor();
-    }
-  bound = _.bind( trigger, this);
-//    setTimeout( _.bind( trigger, this ), randomInteger( 1000 ) + 1000 );
+	function trigger() {
+		this.emit( "change", this.currentData() );
+		setTimeout( _.bind( trigger, this ), randomInteger( 1000 ) + 1000 );
+	}
+	if ( !this._isMockSensor ) {
+		return new MockSensor();
+	}
+	setTimeout( _.bind( trigger, this ), randomInteger( 1000 ) + 1000 );
 };
-
-pushButton.watch(function(err, value){
-  if(err){
-    console.log('Error');
-    return;
-  }
-  if(!value){
-    console.log('Button pushed');
-    bound();
-    sleep.msleep(200);
-  }
-});
-
 
 require( "util" ).inherits( MockSensor, require( "events" ).EventEmitter );
 
+content = '';
+function loadContent(){
+  fs.readFile('data.txt', 'utf8', function(err, contents){
+    content = contents;
+  });
+}
+setInterval(loadContent, 1000);
+
 _.extend( MockSensor.prototype, {
-    _isMockSensor: true,
-    currentData: function() {
-        return {
-            someValue: Math.round( Math.random() * 42 ),
-            someOtherValue: possibleStrings[ randomInteger( possibleStrings.length - 1 ) ]
-        };
-    }
+	_isMockSensor: true,
+	currentData: function() {
+      return {
+          someDiffValue : content,
+          someValue: Math.round( Math.random() * 42 ),
+          someOtherValue: possibleStrings[ randomInteger( possibleStrings.length - 1 ) ]
+      };
+
+	}
 } );
 
 module.exports = MockSensor;
-

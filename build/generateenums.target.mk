@@ -4,7 +4,7 @@ TOOLSET := target
 TARGET := generateenums
 ### Rules for action "generateenums":
 quiet_cmd_binding_gyp_generateenums_target_generateenums = ACTION Generating enums $@
-cmd_binding_gyp_generateenums_target_generateenums = LD_LIBRARY_PATH=$(builddir)/lib.host:$(builddir)/lib.target:$$LD_LIBRARY_PATH; export LD_LIBRARY_PATH; cd $(srcdir)/.; mkdir -p generated; node build-scripts/generate-enums.js /home/joint/iotivity-node/iotivity-installed/include
+cmd_binding_gyp_generateenums_target_generateenums = LD_LIBRARY_PATH=$(builddir)/lib.host:$(builddir)/lib.target:$$LD_LIBRARY_PATH; export LD_LIBRARY_PATH; cd $(srcdir)/.; mkdir -p generated; node build-scripts/generate-enums.js /home/god/iotivity-node/iotivity-installed/include
 
 generated/enums.cc: obj := $(abs_obj)
 generated/enums.cc: builddir := $(abs_builddir)

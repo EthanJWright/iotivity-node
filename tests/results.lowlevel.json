@@ -1,0 +1,169 @@
+{
+    "output": [
+        {
+            "test": "API Presence",
+            "results": [
+                {
+                    "message": "42: Died on test #1     at /home/god/iotivity-node/tests/suite.js:145:15\n    at arrayEach (/home/god/iotivity-node/node_modules/lodash.foreach/index.js:35:9)\n    at Object.forEach [as each] (/home/god/iotivity-node/node_modules/lodash.foreach/index.js:290:10)\n    at runTestSuites (/home/god/iotivity-node/tests/suite.js:139:4)\n    at Object.<anonymous> (/home/god/iotivity-node/tests/suite.js:265:1)\n    at Module._compile (module.js:410:26)\n    at Object.Module._extensions..js (module.js:417:10): Path must be a string. Received undefined",
+                    "result": "FAIL",
+                    "runtime": "4:54:36 PM"
+                },
+                {
+                    "message": "124: Expected number of assertions to be defined, but expect() was not called.",
+                    "result": "FAIL",
+                    "runtime": "4:54:36 PM"
+                }
+            ]
+        },
+        {
+            "test": "Backed Object",
+            "results": [
+                {
+                    "message": "3: Died on test #1     at /home/god/iotivity-node/tests/suite.js:145:15\n    at arrayEach (/home/god/iotivity-node/node_modules/lodash.foreach/index.js:35:9)\n    at Object.forEach [as each] (/home/god/iotivity-node/node_modules/lodash.foreach/index.js:290:10)\n    at runTestSuites (/home/god/iotivity-node/tests/suite.js:139:4)\n    at Object.<anonymous> (/home/god/iotivity-node/tests/suite.js:265:1)\n    at Module._compile (module.js:410:26)\n    at Object.Module._extensions..js (module.js:417:10): Path must be a string. Received undefined",
+                    "result": "FAIL",
+                    "runtime": "4:54:36 PM"
+                },
+                {
+                    "message": "32: Expected number of assertions to be defined, but expect() was not called.",
+                    "result": "FAIL",
+                    "runtime": "4:54:36 PM"
+                }
+            ]
+        },
+        {
+            "test": "Callback Exception",
+            "results": [
+                {
+                    "message": "2: Died on test #1     at /home/god/iotivity-node/tests/suite.js:180:14\n    at arrayEach (/home/god/iotivity-node/node_modules/lodash.foreach/index.js:35:9)\n    at Object.forEach [as each] (/home/god/iotivity-node/node_modules/lodash.foreach/index.js:290:10)\n    at runTestSuites (/home/god/iotivity-node/tests/suite.js:139:4)\n    at Object.<anonymous> (/home/god/iotivity-node/tests/suite.js:265:1)\n    at Module._compile (module.js:410:26)\n    at Object.Module._extensions..js (module.js:417:10): Path must be a string. Received undefined",
+                    "result": "FAIL",
+                    "runtime": "4:54:36 PM"
+                },
+                {
+                    "message": "25: Expected number of assertions to be defined, but expect() was not called.",
+                    "result": "FAIL",
+                    "runtime": "4:54:36 PM"
+                }
+            ]
+        },
+        {
+            "test": "Complex Payload",
+            "results": [
+                {
+                    "message": "1: Died on test #1     at /home/god/iotivity-node/tests/suite.js:180:14\n    at arrayEach (/home/god/iotivity-node/node_modules/lodash.foreach/index.js:35:9)\n    at Object.forEach [as each] (/home/god/iotivity-node/node_modules/lodash.foreach/index.js:290:10)\n    at runTestSuites (/home/god/iotivity-node/tests/suite.js:139:4)\n    at Object.<anonymous> (/home/god/iotivity-node/tests/suite.js:265:1)\n    at Module._compile (module.js:410:26)\n    at Object.Module._extensions..js (module.js:417:10): Path must be a string. Received undefined",
+                    "result": "FAIL",
+                    "runtime": "4:54:36 PM"
+                },
+                {
+                    "message": "24: Expected number of assertions to be defined, but expect() was not called.",
+                    "result": "FAIL",
+                    "runtime": "4:54:36 PM"
+                }
+            ]
+        },
+        {
+            "test": "Device Entity Handler",
+            "results": [
+                {
+                    "message": "1: Died on test #1     at /home/god/iotivity-node/tests/suite.js:180:14\n    at arrayEach (/home/god/iotivity-node/node_modules/lodash.foreach/index.js:35:9)\n    at Object.forEach [as each] (/home/god/iotivity-node/node_modules/lodash.foreach/index.js:290:10)\n    at runTestSuites (/home/god/iotivity-node/tests/suite.js:139:4)\n    at Object.<anonymous> (/home/god/iotivity-node/tests/suite.js:265:1)\n    at Module._compile (module.js:410:26)\n    at Object.Module._extensions..js (module.js:417:10): Path must be a string. Received undefined",
+                    "result": "FAIL",
+                    "runtime": "4:54:36 PM"
+                },
+                {
+                    "message": "18: Expected number of assertions to be defined, but expect() was not called.",
+                    "result": "FAIL",
+                    "runtime": "4:54:36 PM"
+                }
+            ]
+        },
+        {
+            "test": "Discovery",
+            "results": [
+                {
+                    "message": "1: Died on test #1     at /home/god/iotivity-node/tests/suite.js:180:14\n    at arrayEach (/home/god/iotivity-node/node_modules/lodash.foreach/index.js:35:9)\n    at Object.forEach [as each] (/home/god/iotivity-node/node_modules/lodash.foreach/index.js:290:10)\n    at runTestSuites (/home/god/iotivity-node/tests/suite.js:139:4)\n    at Object.<anonymous> (/home/god/iotivity-node/tests/suite.js:265:1)\n    at Module._compile (module.js:410:26)\n    at Object.Module._extensions..js (module.js:417:10): Path must be a string. Received undefined",
+                    "result": "FAIL",
+                    "runtime": "4:54:36 PM"
+                },
+                {
+                    "message": "18: Expected number of assertions to be defined, but expect() was not called.",
+                    "result": "FAIL",
+                    "runtime": "4:54:36 PM"
+                }
+            ]
+        },
+        {
+            "test": "Get Request",
+            "results": [
+                {
+                    "message": "1: Died on test #1     at /home/god/iotivity-node/tests/suite.js:180:14\n    at arrayEach (/home/god/iotivity-node/node_modules/lodash.foreach/index.js:35:9)\n    at Object.forEach [as each] (/home/god/iotivity-node/node_modules/lodash.foreach/index.js:290:10)\n    at runTestSuites (/home/god/iotivity-node/tests/suite.js:139:4)\n    at Object.<anonymous> (/home/god/iotivity-node/tests/suite.js:265:1)\n    at Module._compile (module.js:410:26)\n    at Object.Module._extensions..js (module.js:417:10): Path must be a string. Received undefined",
+                    "result": "FAIL",
+                    "runtime": "4:54:36 PM"
+                },
+                {
+                    "message": "19: Expected number of assertions to be defined, but expect() was not called.",
+                    "result": "FAIL",
+                    "runtime": "4:54:36 PM"
+                }
+            ]
+        },
+        {
+            "test": "Interactive Server Startup",
+            "results": [
+                {
+                    "message": "4: Died on test #1     at /home/god/iotivity-node/tests/suite.js:145:15\n    at arrayEach (/home/god/iotivity-node/node_modules/lodash.foreach/index.js:35:9)\n    at Object.forEach [as each] (/home/god/iotivity-node/node_modules/lodash.foreach/index.js:290:10)\n    at runTestSuites (/home/god/iotivity-node/tests/suite.js:139:4)\n    at Object.<anonymous> (/home/god/iotivity-node/tests/suite.js:265:1)\n    at Module._compile (module.js:410:26)\n    at Object.Module._extensions..js (module.js:417:10): Path must be a string. Received undefined",
+                    "result": "FAIL",
+                    "runtime": "4:54:36 PM"
+                },
+                {
+                    "message": "27: Expected number of assertions to be defined, but expect() was not called.",
+                    "result": "FAIL",
+                    "runtime": "4:54:36 PM"
+                }
+            ]
+        },
+        {
+            "test": "Local Device And Platform",
+            "results": [
+                {
+                    "message": "0: Died on test #1     at /home/god/iotivity-node/tests/suite.js:145:15\n    at arrayEach (/home/god/iotivity-node/node_modules/lodash.foreach/index.js:35:9)\n    at Object.forEach [as each] (/home/god/iotivity-node/node_modules/lodash.foreach/index.js:290:10)\n    at runTestSuites (/home/god/iotivity-node/tests/suite.js:139:4)\n    at Object.<anonymous> (/home/god/iotivity-node/tests/suite.js:265:1)\n    at Module._compile (module.js:410:26)\n    at Object.Module._extensions..js (module.js:417:10): Path must be a string. Received undefined",
+                    "result": "FAIL",
+                    "runtime": "4:54:36 PM"
+                },
+                {
+                    "message": "19: Expected number of assertions to be defined, but expect() was not called.",
+                    "result": "FAIL",
+                    "runtime": "4:54:36 PM"
+                }
+            ]
+        },
+        {
+            "test": "Multiple Observers",
+            "results": [
+                {
+                    "message": "1: Died on test #1     at /home/god/iotivity-node/tests/suite.js:180:14\n    at arrayEach (/home/god/iotivity-node/node_modules/lodash.foreach/index.js:35:9)\n    at Object.forEach [as each] (/home/god/iotivity-node/node_modules/lodash.foreach/index.js:290:10)\n    at runTestSuites (/home/god/iotivity-node/tests/suite.js:139:4)\n    at Object.<anonymous> (/home/god/iotivity-node/tests/suite.js:265:1)\n    at Module._compile (module.js:410:26)\n    at Object.Module._extensions..js (module.js:417:10): Path must be a string. Received undefined",
+                    "result": "FAIL",
+                    "runtime": "4:54:36 PM"
+                },
+                {
+                    "message": "18: Expected number of assertions to be defined, but expect() was not called.",
+                    "result": "FAIL",
+                    "runtime": "4:54:36 PM"
+                }
+            ]
+        },
+        {
+            "test": "Resource Operations",
+            "results": [
+                {
+                    "message": "1: Died on test #1     at /home/god/iotivity-node/tests/suite.js:145:15\n    at arrayEach (/home/god/iotivity-node/node_modules/lodash.foreach/index.js:35:9)\n    at Object.forEach [as each] (/home/god/iotivity-node/node_modules/lodash.foreach/index.js:290:10)\n    at runTestSuites (/home/god/iotivity-node/tests/suite.js:139:4)\n    at Object.<anonymous> (/home/god/iotivity-node/tests/suite.js:265:1)\n    at Module._compile (module.js:410:26)\n    at Object.Module._extensions..js (module.js:417:10): Path must be a string. Received undefined",
+                    "result": "FAIL",
+                    "runtime": "4:54:36 PM"
+                },
+                {
+                    "message": "17: Expected number of assertions to be defined, but expect() was not called.",
+                    "result": "FAIL",
+                    "runtime": "4:54:36 PM"
+                }
+            ]
+        }
+    ]
+}

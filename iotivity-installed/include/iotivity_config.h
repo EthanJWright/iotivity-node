@@ -2,7 +2,7 @@
 /* ****************************************************************************
  * iotivity_config.h - IoTivity platform-specific configuration header.
  *
- * Auto-generated code for the linux arm platform.
+ * Auto-generated code for the linux x86_64 platform.
  *
  *************************************************************************** */
 

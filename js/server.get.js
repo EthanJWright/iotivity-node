@@ -42,6 +42,7 @@ console.log( "Registering resource" );
 
 // Create a new resource
 iotivity.OCCreateResource(
+    console.log("create resource");
 
 	// The bindings fill in this object
 	handleReceptacle,
@@ -52,7 +53,7 @@ iotivity.OCCreateResource(
 	function( flag, request ) {
 		console.log( "Entity handler called with flag = " + flag + " and the following request:" );
 		console.log( JSON.stringify( request, null, 4 ) );
-
+        console.log("HERE");
 		// If we find the magic question in the request, we return the magic answer
 		if ( request && request.payload && request.payload.values &&
 				request.payload.values.question ===
@@ -71,11 +72,14 @@ iotivity.OCCreateResource(
 				resourceUri: sampleUri,
 				sendVendorSpecificHeaderOptions: []
 			} );
-
+            console.log('oc eh ok');
 			return iotivity.OCEntityHandlerResult.OC_EH_OK;
-		}
+		}if(request && request.payload){
+          console.log(payload);
+        }
 
 		// By default we error out
+        console.log("error out");
 		return iotivity.OCEntityHandlerResult.OC_EH_ERROR;
 	},
 	iotivity.OCResourceProperty.OC_DISCOVERABLE );
